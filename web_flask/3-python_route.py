@@ -25,6 +25,7 @@ def c_is_fun(text):
     return "C {}".format(text)
 
 
+@app.route("/python/", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python(text="is cool"):
     """Displays 'Python' followed by the value of <text>."""
