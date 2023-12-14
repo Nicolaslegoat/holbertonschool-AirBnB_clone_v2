@@ -22,7 +22,7 @@ def cities_by_states():
     states = storage.all(State)
     cities = storage.all(City)
 
-    return render_template("8-cities_by_states.html", 
+    return render_template("8-cities_by_states.html",
                            cities=cities, states=states)
 
 
